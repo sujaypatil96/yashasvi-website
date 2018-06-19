@@ -1,0 +1,40 @@
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans";
+
+.focus-content {
+  /* border-radius: 10px; */
+  /* border: none; */
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+  /* padding: 5px 10px; */
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #2e1150; -webkit-box-shadow: 0 0 3px #2e1150; }
+  50% { background-color: #7ac5cd; -webkit-box-shadow: 0 0 40px #7ac5cd; }
+  100% { background-color: #2e1150; -webkit-box-shadow: 0 0 3px #2e1150; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #2e1150; -moz-box-shadow: 0 0 3px #2e1150; }
+  50% { background-color: #7ac5cd; -moz-box-shadow: 0 0 40px #7ac5cd; }
+  100% { background-color: #2e1150; -moz-box-shadow: 0 0 3px #2e1150; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #2e1150; box-shadow: 0 0 3px #2e1150; }
+  50% { background-color: #7ac5cd; box-shadow: 0 0 40px #7ac5cd; }
+  100% { background-color: #2e1150; box-shadow: 0 0 3px #2e1150; }
+}
+
+@keyframes glowing {
+  0% { background-color: #2e1150; box-shadow: 0 0 3px #2e1150; }
+  50% { background-color: #7ac5cd; box-shadow: 0 0 40px #7ac5cd; }
+  100% { background-color: #2e1150; box-shadow: 0 0 3px #2e1150; }
+}
