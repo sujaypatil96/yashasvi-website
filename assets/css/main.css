@@ -1844,7 +1844,7 @@ input, select, textarea {
 			line-height: 1em;
 			border-top-left-radius: 5px;
 			border-bottom-left-radius: 5px;
-			padding: 0.5em 0.75em 0 1em;
+			padding: 1.1em 0.75em 0 1em;
 		}
 
 			ul.dates .date:after {
