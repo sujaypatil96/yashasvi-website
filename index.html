@@ -5,15 +5,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans" />
-
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/flickity.css">
 
+		<link rel="stylesheet" href="assets/css/flickity-responsive.css" />
+
 		<script src="assets/js/flickity.pkgd.min.js"></script>
 	</head>
+
+
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 				<section id="header" class="main-header">
@@ -21,45 +23,42 @@
 						<h1><a href="index.html"><b>Yashasvi Information Solutions</b></a></h1>
 						<h3><b><a href="index.html"><b><i>Let's simplify..</i></b></a></b></h3>
 
+						<div class="full-nav">
 						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Services</a>
-									<ul>
-										<li><a href="data-center-consulting.html">Data Center Consulting</a></li>
-										<li><a href="cloud-consulting.html">Cloud Consulting</a></li>
-										<li><a href="it-transformation.html">IT Transformation</a></li>
-										<li><a href="bcp-dr.html">Business Continuity Planning and Disaster Recovery</a></li>
-										<li><a href="network-collab.html">Network and Collaboration</a></li>
-										<li><a href="compute-storage-backup.html">Compute, Storage and Backup</a></li>
-										<li><a href="end-user-computing.html">End User Computing</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Solutions</a>
-									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-										<li>
-											<a href="#">Phasellus consequat</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-												<li><a href="#">Nisl sed aliquam</a></li>
-												<li><a href="#">Dolore adipiscing</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
-									</ul>
-								</li>
-								<li><a href="left-sidebar.html">Partners</a></li>
-								<li><a href="right-sidebar.html">Resources</a></li>
-								<li><a href="no-sidebar.html">Contact</a></li>
-							</ul>
+							<div class="dropdown">
+								<a class="dropbtn" href="index.html">Home</a>
+							</div>
+
+							<div class="dropdown">
+								<a class="dropbtn" href="#">Services</a>
+								<div class="dropdown-content">
+									<a class="nav-links" href="data-center-consulting.html">Data Center Consulting</a>
+									<a class="nav-links" href="cloud-consulting.html">Cloud Consulting</a>
+									<a class="nav-links" href="it-transformation.html">IT Transformation</a>
+									<a class="nav-links" href="bcp-dr.html">Business Continuity Planning and Disaster Recovery</a>
+									<a class="nav-links" href="network-collab.html">Network and Collaboration</a>
+									<a class="nav-links" href="compute-storage-backup.html">Compute, Storage and Backup</a>
+									<a class="nav-links" href="end-user-computing.html">End User Computing</a>
+								</div>
+							</div>
+
+							<div class="dropdown">
+								<a class="dropbtn" href="#">Solutions</a>
+								<div class="dropdown-content">
+									<a href="data-center-cloud-solutions.html">Data Center and Cloud Solutions</a>
+									<a href="cyber-security-solutions.html">Cyber Security</a>
+								</div>
+							</div>
+
+							<div class="dropdown">
+								<a class="dropbtn" href="#">Partners</a>
+							</div>
+
+							<div class="dropdown">
+								<a class="dropbtn" href="contact.html">Contact</a>
+							</div>
 						</nav>
+					</div>
 
 					<section id="banner">
 						<div class="focus-content">
@@ -118,7 +117,7 @@
 							</div>
 							<footer>
 								<ul class="actions">
-									<li><a href="#" class="button large">Get Started</a></li>
+									<!-- <li><a href="#" class="button large">Get Started</a></li> -->
 									<li><a href="#" class="button alt large">Learn More</a></li>
 								</ul>
 							</footer>
@@ -203,14 +202,84 @@
 									</section>
 							</div>
 							<div class="col-12">
-								<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": true, "groupCells": 2 }'>
-									<div class="gallery-cell"></div>
-									<div class="gallery-cell"></div>
-									<div class="gallery-cell"></div>
-									<div class="gallery-cell"></div>
-									<div class="gallery-cell"></div>
+								<div class="carousel"
+								data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 1000, "wrapAround": true }'>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/dell-emc.jpg" alt="Dell-EMC" />
 								</div>
-							</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/ibm.png" alt="IBM" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/hpe.jpg" alt="HPE" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/veritas.jpg" alt="Veritas" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/netapp.png" alt="NetApp" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/symantec.png" alt="Symantec" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/hitachi.png" alt="Hitachi" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/acronis2.jpg" alt="Acronis" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/cisco.png" alt="Cisco" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/check-point.jpg" alt="Check Point" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/riverbed.png" alt="Riverbed" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/seclore.png" alt="Seclore" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/entrust-datacard.jpg" alt="ED" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/instasafe.png" alt="Instasafe" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/redhat.png" alt="Redhat" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/sophos.png" alt="Sophos" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/suse2.png" alt="Suse" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/vmware.png" alt="VMware" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/polycom.png" alt="Polycom" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/apple.png" alt="Apple" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/lenovo.jpg" alt="Lenovo" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/hp.png" alt="HP" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/microsoft.jpg" alt="Microsoft" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/oracle.png" alt="Oracle" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/aws.png" alt="AWS" />
+								</div>
+								</div>
 					</div>
 				</div>
 				</section>
