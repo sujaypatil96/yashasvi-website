@@ -67,16 +67,6 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* animations */
-/* .grow:hover
-{
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-} */
-
-
-
 /* Basic */
 
 	html {
@@ -163,6 +153,7 @@ input, select, textarea {
 
 		a:hover {
 			text-decoration: none;
+
 		}
 
 	br.clear {
@@ -2890,16 +2881,61 @@ input, select, textarea {
 			}
 
 	}
+	/* new styles */
+	.portfolio-images {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+		margin-bottom: 20px;
+	}
 
-/* new styles */
-.portfolio-images {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	margin-bottom: 20px;
-}
+	.center {
+		font-size: 20px;
+		text-align: center;
+	}
 
-.center {
-	font-size: 20px;
-	text-align: center;
-}
+	/* styles for new navbar */
+	.dropbtn {
+		background-color: #d52349;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		text-decoration: none;
+		/* border-radius: 3px; */
+		font-style: italic;
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 300px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		border-bottom: 1px solid #c6c2c2;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #ddd;}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {display: block;}
+
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn {background-color: #d52349;}

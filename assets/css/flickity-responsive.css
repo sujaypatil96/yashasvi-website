@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 200px;
+  }
+}
+
+.flickity-button {
+  background: transparent;
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: black;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
