@@ -1600,7 +1600,7 @@ input, select, textarea {
 /* Button */
 
 	input[type="button"],
-	input[type="submit"],
+	/* input[type="submit"], */
 	input[type="reset"],
 	button,
 	.button {
@@ -1624,7 +1624,7 @@ input, select, textarea {
 	}
 
 		input[type="button"]:hover,
-		input[type="submit"]:hover,
+		/* input[type="submit"]:hover, */
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
@@ -1632,7 +1632,7 @@ input, select, textarea {
 		}
 
 		input[type="button"]:active,
-		input[type="submit"]:active,
+		/* input[type="submit"]:active, */
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
@@ -2938,4 +2938,13 @@ input, select, textarea {
 	.dropdown:hover .dropdown-content {display: block;}
 
 	/* Change the background color of the dropdown button when the dropdown content is shown */
-	.dropdown:hover .dropbtn {background-color: #d52349;}
+	.dropdown:hover .dropbtn {background-color: #c6253d;}
+
+	.full-nav {
+		background-color: #d52349;
+		height: 50px;
+	}
+
+	.point {
+		float: left;
+	}
