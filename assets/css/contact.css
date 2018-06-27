@@ -6,7 +6,6 @@
 
     body {
         font-family: 'Josefin Sans', sans-serif;
-        color: #384047;
     }
 
     form {
@@ -55,13 +54,13 @@
     input[type="submit"] {
         padding: 20px 25px 20px 25px;
         color: #FFF;
-        background-color: #666699;
+        background-color: #801244;;
         font-size: 18px;
         text-align: center;
         font-style: normal;
         border-radius: 5px;
         width: 100%;
-        border: 1px solid #666699;
+        border: 1px solid #801244;;
         border-width: 1px 1px 3px;
         box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
         font-family: 'Josefin Sans';
@@ -76,6 +75,7 @@
         line-height: 26.4px;
         text-align: center;
         padding-top: 20px;
+        color: white;
     }
     h2 {
     	font-family: Josefin Sans;
@@ -84,6 +84,7 @@
     	font-variant: normal;
     	font-weight: 100;
     	line-height: 26.4px;
+        color: white;
     }
     h3 {
     	font-family: Josefin Sans;
@@ -92,11 +93,13 @@
     	font-variant: normal;
     	font-weight: 500;
     	line-height: 15.4px;
+        color: white;
     }
 
     .main {
         text-align: center;
         margin-bottom: 40px;
+        color: white;
     }
 
     #main-header {
@@ -104,17 +107,18 @@
     }
 
     @media screen and (min-width: 480px) {
+        form {
+            max-width: 720px;
+        }
 
-    form {
-        max-width: 720px;
-    }
+        button {
+            font-family: 'Josefin Sans', sans-serif;
+        }
 
-    button {
-        font-family: 'Josefin Sans', sans-serif;
-    }
-
-    form {
-        background-color: #ccccff;
+        form {
+            background-color: #d52349;
+            color: white;
+        }
     }
 
     .center {

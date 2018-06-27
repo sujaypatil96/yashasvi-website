@@ -1438,7 +1438,7 @@ input, select, textarea {
 
 	form label {
 		display: block;
-		color: #252122;
+		color: white;
 		font-weight: 400;
 		margin: 0 0 0.5em 0;
 	}
@@ -2051,7 +2051,7 @@ input, select, textarea {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 5em 0 4em 0;
+		/* padding: 5em 0 4em 0; */
 		text-align: center;
 	}
 
@@ -2163,7 +2163,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		/* margin: 4em 0 0 0; */
 	}
 
 		#banner header {
@@ -2820,7 +2820,7 @@ input, select, textarea {
 
 			#header {
 				text-align: center;
-				padding: 2em 0;
+				/* padding: 2em 0; */
 			}
 
 				#header h1 {
@@ -2898,8 +2898,8 @@ input, select, textarea {
 	.dropbtn {
 		background-color: #d52349;
 		color: white;
-		padding: 16px;
-		font-size: 16px;
+		padding: 20px;
+		font-size: 20px;
 		border: none;
 		text-decoration: none;
 		/* border-radius: 3px; */
@@ -2943,6 +2943,11 @@ input, select, textarea {
 	.full-nav {
 		background-color: #d52349;
 		height: 50px;
+		/* overflow: auto; */
+	}
+
+	@media only screen and (max-width: 600) {
+		.full-nav { width: 50%; }
 	}
 
 	.point {
