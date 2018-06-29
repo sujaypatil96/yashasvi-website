@@ -1568,6 +1568,11 @@ input, select, textarea {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		padding: 2.75em 1.75em 2.75em 1.75em;
+		/* height: 900px; */
+	}
+
+	#box {
+		height: 900px;
 	}
 
 		.box .image.featured {
@@ -1736,9 +1741,6 @@ input, select, textarea {
 			padding-left: 0.25em;
 		}
 
-	.landing {
-		margin-bottom: 20px;
-	}
 
 /* Actions */
 
@@ -2066,7 +2068,8 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		margin: 2.5em 0 0 0;
+		margin: 2.5em 0 2.5em 0;
+		font-size: 20px;
 	}
 
 		#nav > ul {
@@ -2828,6 +2831,7 @@ input, select, textarea {
 					font-weight: 900;
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
+					/* margin-top: -10%; */
 				}
 
 		/* Intro */
@@ -2943,11 +2947,6 @@ input, select, textarea {
 	.full-nav {
 		background-color: #d52349;
 		height: 50px;
-		/* overflow: auto; */
-	}
-
-	@media only screen and (max-width: 600) {
-		.full-nav { width: 50%; }
 	}
 
 	.point {
