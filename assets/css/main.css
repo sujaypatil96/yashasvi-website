@@ -2952,3 +2952,25 @@ input, select, textarea {
 	.point {
 		float: left;
 	}
+
+	.alert
+	{
+		animation: blink 2s infinite;
+		text-decoration: none;
+		color: black;
+	}
+
+	@keyframes blink
+	{
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+
+	.blinker {
+		height: 100px;
+		width: 100%;
+		background-color: #E8E8E8;
+		text-align: center;
+		padding-top: 1%;
+	}
