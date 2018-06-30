@@ -2974,3 +2974,8 @@ input, select, textarea {
 		text-align: center;
 		padding-top: 1%;
 	}
+
+	.highlight {
+		background-color: yellow;
+		color: red;
+	}
