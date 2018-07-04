@@ -10,8 +10,71 @@
 
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/contact.css" />
+
 </head>
-<body>
+
+<style media="screen">
+	/* Set the size of the div element that contains the map */
+	#map {
+		height: 400px;  /* The height is 400 pixels */
+		width: 100%;  /* The width is the width of the web page */
+	}
+
+	.map-container {
+		text-align: center;
+		border: 1px solid #dee1e5;
+		background-color: #d52349;
+	}
+</style>
+
+<script>
+	function initMap() {
+
+	var yashasvi = {lat: 12.909750, lng: 77.590792};
+
+	var map = new google.maps.Map(
+	document.getElementById('map'), {zoom: 11, center: yashasvi});
+
+	var contentString = '<div id="content">'+
+	'<div id="siteNotice">'+
+	'</div>'+
+	'<h1 id="firstHeading" class="firstHeading" style="color: black;">Yashasvi Information Solutions Pvt. Ltd.</h1>'+
+	'<div id="bodyContent">'+
+	'<p><b>Yashasvi Information Solutions Pvt. Ltd.</b>, has a vision ' +
+	'and that is to be one of the formidable names in IT Infrastructure '+
+	'consulting. To provide quality of service and enable customers '+
+	'to adopt "technology for business" sake that can bring in '+
+	'direct business benefits. '+
+	'<p>Attribution: <a href="https://yashasvi.co.in">Yashasvi Information Solutions</a></p>'+
+	'</div>'+
+	'</div>';
+
+	var infowindow = new google.maps.InfoWindow({
+		content: contentString
+	});
+
+	// The marker, positioned at Yashasvi Information Solutions Pvt Ltd
+	var marker = new google.maps.Marker({position: yashasvi, map: map});
+
+	marker.addListener('mouseout', function() {
+		infowindow.open(map, marker);
+	});
+
+	}
+</script>
+
+<!--Load the API from the specified URL
+* The async attribute allows the browser to render the page while the API loads
+* The key parameter will contain your own API key (which is not needed for this tutorial)
+* The callback parameter executes the initMap() function
+-->
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDora0rp4LToE_y3Ihqz0FAiGa2vMCC2bA&callback=initMap">
+</script>
+
+<body class="homepage is-preload">
+
 
 <section id="main-header">
 	<div class="main">
@@ -92,8 +155,19 @@
 	<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
 	<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
 	</tr></tbody></table></div></ol></form>
-	<br><br>
+	<br>
+
+	<!-- Gmaps container -->
+	<div class="map-container">
+		<h4><b style="color: white;">To reach us:</b></h4>
+		<div id="map">
+			<script type="text/javascript">
+			initMap();
+			</script>
+		</div>
+	</div>
 </section>
+
 
 <section id="footer">
 	<div class="container">
@@ -190,7 +264,6 @@
 		</div>
 	</div>
 </section>
-
 
 </body>
 </html>
