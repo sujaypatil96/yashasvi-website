@@ -1,269 +1,327 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Contact Yashasvi</title>
-	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Contact - Yashasvi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/contact.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/animate.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/flickity.css">
+		<link rel="stylesheet" href="assets/css/flickity-responsive.css" />
 
-</head>
+		<!-- CSS for contact page -->
+		<link rel="stylesheet" href="assets/css/contact.css" />
 
-<style media="screen">
-	/* Set the size of the div element that contains the map */
-	#map {
-		height: 400px;  /* The height is 400 pixels */
-		width: 100%;  /* The width is the width of the web page */
-	}
+		<script src="assets/js/flickity.pkgd.min.js"></script>
 
-	.map-container {
-		text-align: center;
-		border: 1px solid #dee1e5;
-		background-color: #d52349;
-	}
-</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121649854-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-<script>
-	function initMap() {
+			gtag('config', 'UA-121649854-1');
+		</script>
+	</head>
 
-	var yashasvi = {lat: 12.909750, lng: 77.590792};
+	<style type="text/css">
+		/* Set the size of the div element that contains the map */
+		#map {
+			height: 400px;  /* The height is 400 pixels */
+			width: 100%;  /* The width is the width of the web page */
+		}
 
-	var map = new google.maps.Map(
-	document.getElementById('map'), {zoom: 20, center: yashasvi});
+		.map-container {
+			text-align: center;
+			border: 1px solid #dee1e5;
+			background-color: #d52349;
+		}
 
-	var contentString = '<div id="content">'+
-	'<div id="siteNotice">'+
-	'</div>'+
-	'<h1 id="firstHeading" class="firstHeading" style="color: black;">Yashasvi Information Solutions Pvt. Ltd.</h1>'+
-	'<div id="bodyContent">'+
-	'<p><b>Yashasvi Information Solutions Pvt. Ltd.</b>, has a vision ' +
-	'and that is to be one of the formidable names in IT Infrastructure '+
-	'consulting. To provide quality of service and enable customers '+
-	'to adopt "technology for business" sake that can bring in '+
-	'direct business benefits. '+
-	'<p>Attribution: <a href="https://yashasvi.co.in">Yashasvi Information Solutions</a></p>'+
-	'</div>'+
-	'</div>';
+		.form {
+			background-color: white;
+			margin-top: -15px;
+		}
+	</style>
 
-	var infowindow = new google.maps.InfoWindow({
-		content: contentString
-	});
+	<script>
+		function initMap() {
 
-	// The marker, positioned at Yashasvi Information Solutions Pvt Ltd
-	var marker = new google.maps.Marker({position: yashasvi, map: map});
+		var yashasvi = {lat: 12.909750, lng: 77.590792};
 
-	marker.addListener('mouseout', function() {
-		infowindow.open(map, marker);
-	});
+		var map = new google.maps.Map(
+		document.getElementById('map'), {zoom: 15, center: yashasvi});
 
-	}
-</script>
+		var contentString = '<div id="content">'+
+		'<div id="siteNotice">'+
+		'</div>'+
+		'<h1 id="firstHeading" class="firstHeading" style="color: black;">Yashasvi Information Solutions Pvt. Ltd.</h1>'+
+		'<div id="bodyContent">'+
+		'<p><b>Yashasvi Information Solutions Pvt. Ltd.</b>, has a vision ' +
+		'and that is to be one of the formidable names in IT Infrastructure '+
+		'consulting. To provide quality of service and enable customers '+
+		'to adopt "technology for business" sake that can bring in '+
+		'direct business benefits. '+
+		'<p>Attribution: <a href="https://yashasvi.co.in">Yashasvi Information Solutions</a></p>'+
+		'</div>'+
+		'</div>';
 
-<!--Load the API from the specified URL
-* The async attribute allows the browser to render the page while the API loads
-* The key parameter will contain your own API key (which is not needed for this tutorial)
-* The callback parameter executes the initMap() function
--->
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString
+		});
 
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDora0rp4LToE_y3Ihqz0FAiGa2vMCC2bA&callback=initMap">
-</script>
+		// The marker, positioned at Yashasvi Information Solutions Pvt Ltd
+		var marker = new google.maps.Marker({position: yashasvi, map: map});
 
-<body class="homepage is-preload">
+		marker.addListener('mouseout', function() {
+			infowindow.open(map, marker);
+		});
+		}
+	</script>
 
+	<!--Load the API from the specified URL
+	* The async attribute allows the browser to render the page while the API loads
+	* The key parameter will contain your own API key (which is not needed for this tutorial)
+	* The callback parameter executes the initMap() function
+	-->
 
-<section id="main-header">
-	<div class="main">
-		<img src="images/mail.svg" alt="Email" width="200" height="200" />
-		<nav id="nav">
-			<ul>
-				<li class="current"><a href="index.html">Home</a></li>
-				<li><a href="products.html">Partners</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="promotions.html">Promotions</a></li>
-			</ul>
-		</nav>
-	</div>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDora0rp4LToE_y3Ihqz0FAiGa2vMCC2bA&callback=initMap">
+	</script>
 
-	<form action="https://docs.google.com/forms/d/e/1FAIpQLScSJtsS8IhSgWqKRuJw2oazazlphHSfSBhVe_hzT10GCFch2w/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on"><ol role="list" class="ss-question-list" style="padding-left: 0;">
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+				<section id="header" class="main-header">
+					<div class="index-des">
+						<img id="logo" src="images/main-logo.jpg" alt="yashasvi logo" width="360" height="230" />
+						<!-- <img src="images/brush-stroke3.png" alt="brush stroke" width="100%" height="300" /> -->
+					</div>
 
-	<h1><u>CONTACT FORM</u></h1>
-	<br>
-	<div class="ss-form-question errorbox-good" role="listitem">
-	<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-	<label class="ss-q-item-label" for="entry_1114378236"><div class="ss-q-title">Individual/Organization Name:
-	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-	<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-
-	<input type="text" name="entry.1114378236" value="" class="ss-q-short" id="entry_1114378236" dir="auto" aria-label="Individual/Organization Name:  " aria-required="true" required="" title="">
-	<div class="error-message" id="444479213_errorMessage"></div>
-
-	</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-	<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
-	<label class="ss-q-item-label" for="entry_631925441"><div class="ss-q-title">Email ID:
-	</div>
-	<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-
-	<input type="text" name="entry.631925441" value="" class="ss-q-short" id="entry_631925441" dir="auto" aria-label="Email ID:  " title="">
-	<div class="error-message" id="771298952_errorMessage"></div>
-
-	</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-	<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
-	<label class="ss-q-item-label" for="entry_747283542"><div class="ss-q-title">Phone Number:
-	</div>
-	<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-
-	<input type="text" name="entry.747283542" value="" class="ss-q-short" id="entry_747283542" dir="auto" aria-label="Phone Number:  " title="">
-	<div class="error-message" id="666224923_errorMessage"></div>
-
-	</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-	<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-	<label class="ss-q-item-label" for="entry_1547617845"><div class="ss-q-title">Subject of query:
-	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-	<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-
-	<input type="text" name="entry.1547617845" value="" class="ss-q-short" id="entry_1547617845" dir="auto" aria-label="Subject of query:  " aria-required="true" required="" title="">
-	<div class="error-message" id="380146084_errorMessage"></div>
-
-	<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
-	<label class="ss-q-item-label" for="entry_1053728972"><div class="ss-q-title">Promo Code:
-	</div>
-	<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-	<input type="text" name="entry.1053728972" value="" class="ss-q-short" id="entry_1053728972" dir="auto" aria-label="Promo Code  " title="">
-
-	</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-	<div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
-	<label class="ss-q-item-label" for="entry_1334383938"><div class="ss-q-title">Detailed Query:
-	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-	<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-
-	<textarea name="entry.1334383938" rows="8" cols="0" class="ss-q-long" id="entry_1334383938" dir="auto" aria-label="Detailed Query:  " aria-required="true" required=""></textarea>
-	<div class="error-message" id="509588336_errorMessage"></div>
-
-	</div></div></div>
-	<input type="hidden" name="draftResponse" value="[null,null,&quot;-4234249290924452818&quot;]">
-	<input type="hidden" name="pageHistory" value="0">
-
-
-
-	<input type="hidden" name="fbzx" value="-4234249290924452818">
-	<div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr"><label for="emailReceipt" style="display:inline;"></label></div>
-	<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-	<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-	</tr></tbody></table></div></ol></form>
-	<br>
-
-	<!-- Gmaps container -->
-	<div class="map-container">
-		<h4><b style="color: white;">To reach us:</b></h4>
-		<div id="map">
-			<script type="text/javascript">
-			initMap();
-			</script>
-		</div>
-	</div>
-</section>
-
-
-<section id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-8 col-12-medium">
-				<section>
-					<header>
-						<h2><b>Privacy Terms</b></h2>
-					</header>
-					<ul class="dates">
-						<li>
-							<span class="date"><strong># 1</strong></span>
-							<h3><b><a href="terms-of-use.html" target="_blank">Terms of Use</a></b></h3>
-							<p><b><i>Links to other websites, Termination, Governing Laws.</i></b></p>
-						</li>
-						<li>
-							<span class="date"><strong># 2</strong></span>
-							<h3><b><a href="privacy-policy.html" target="_blank">Privacy Policy</a></b></h3>
-							<p><b><i>Information Collection and Use, Log Data, Cookies, Services Providers, Security, Children's Privacy.</i></b></p>
-						</li>
-						<li>
-							<span class="date"><strong># 3</strong></span>
-							<h3><b><a href="code-of-conduct.html" target="_blank">Code of Business Conduct</a></b></h3>
-							<p><b><i>Transparency, Respect for the Individual, Set Tone at the Top, Uphold the Law, Competition, Proprietary Information,
-								Selective Disclosure, Conflicts of Interest, Accepting Business Courtesies, Corporate Recordkeeping, Accountability,
-								Use of Company Resources, Media Inquiries.</i></b></p>
-						</li>
-					</ul>
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Services</a>
+									<ul>
+										<a href="data-center-consulting.html">Data Center Consulting</a>
+										<a href="cloud-consulting.html">Cloud Consulting</a>
+										<a href="it-transformation.html">IT Transformation</a>
+										<a href="bcp-dr.html">Business Continuity Planning and Disaster Recovery</a>
+										<a href="network-collab.html">Network and Collaboration</a>
+										<a href="compute-storage-backup.html">Compute, Storage and Backup</a>
+										<a href="end-user-computing.html">End User Computing</a>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Solutions</a>
+									<ul>
+										<a href="data-center-cloud-solutions.html">Data Center and Cloud Solutions</a>
+										<a href="cyber-security-solutions.html">Cyber Security</a>
+										<a href="unified-workplace.html">Unified Workplace</a>
+									</ul>
+								</li>
+								<li><a href="products.html">Partners</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<!-- <li><a href="analytics.html" target="_blank">Analytics</a></li> -->
+								<li><a href="promotions.html">Promotions</a></li>
+							</ul>
+						</nav>
 				</section>
-			</div>
 
-			<div class="col-4 col-12-medium">
-				<section>
-					<header>
-						<h2><b>Yashasvi in the News?</b></h2>
-					</header>
-					<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-					<p><b>
-						Yashasvi Information Solutions Pvt. Ltd. was featured in <i>Silicon India</i> magazine's 10 most promising
-						Cisco service providers. To read more, follow the link below:
-					</b></p>
-					<footer>
-						<ul class="actions">
-							<li><a href="https://technology.siliconindiamagazine.com/ranking/10-most-promising-cisco-sservice-providers–-2017-rid-187.html" class="button"><b>Cisco Top 10 - Yashasvi</b></a></li>
-						</ul>
-					</footer>
-				</section>
-			</div>
+				<div class="form">
 
-			<div class="col-4 col-12-medium">
-				<section>
-					<header>
-						<h2><b>Contact Us</b></h2>
-					</header>
-					<ul class="social">
-						<li><a class="icon fa-facebook" href="https://www.facebook.com/YISPL/"><span class="label">Facebook</span></a></li>
-						<li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/yashasvi-information-solutions-pvt-ltd/?originalSubdomain=in"><span class="label">LinkedIn</span></a></li>
-						<li><a class="icon fa-twitter" href="https://twitter.com/yashasvi_info"><span class="label">LinkedIn</span></a></li>
-					</ul>
-					<ul class="contact">
-						<li>
-							<h3><b>Address</b></h3>
-							<p><b>
-								#418, JP Nagar 2<sup>nd</sup> Phase<br />
-								Bangalore - 560078<br />
-								Karnataka, India
-							</b></p>
-						</li>
-						<li>
-							<h3><b>Mail</b></h3>
-							<p><b><a href="#">info@yashasvi.co.in</a></b></p>
-							<p><b><a href="#">sanjeev@yashasvi.co.in</a></b></p>
-							<p><b><a href="#">niladri@yashasvi.co.in</a></b></p>
-						</li>
-						<li>
-							<h3><b>Mobile</b></h3>
-							<p><b>+91 9845009026 / +91 9108995664</b></p>
-						</li>
-						<li>
-							<h3><b>Phone</b></h3>
-							<p><b>+91 080 2649 2692</b></p>
-						</li>
-					</ul>
-				</section>
-			</div>
-			<div class="col-12">
+				<form action="https://docs.google.com/forms/d/e/1FAIpQLScSJtsS8IhSgWqKRuJw2oazazlphHSfSBhVe_hzT10GCFch2w/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-				<div id="copyright">
-					<ul class="links">
-						<li>&copy; All rights reserved.</li><li><a href="#">Yashasvi Information Solutions</a></li>
-					</ul>
+				<h1><u>CONTACT FORM</u></h1>
+				<br>
+				<div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_1114378236"><div class="ss-q-title">Individual/Organization Name:
+				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+				<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+				<input type="text" name="entry.1114378236" value="" class="ss-q-short" id="entry_1114378236" dir="auto" aria-label="Individual/Organization Name:  " aria-required="true" required="" title="">
+				<div class="error-message" id="444479213_errorMessage"></div>
+
+				</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_631925441"><div class="ss-q-title">Email ID:
 				</div>
-			</div>
-		</div>
-	</div>
-</section>
+				<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
 
-</body>
+				<input type="text" name="entry.631925441" value="" class="ss-q-short" id="entry_631925441" dir="auto" aria-label="Email ID:  " title="">
+				<div class="error-message" id="771298952_errorMessage"></div>
+
+				</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_747283542"><div class="ss-q-title">Phone Number:
+				</div>
+				<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+				<input type="text" name="entry.747283542" value="" class="ss-q-short" id="entry_747283542" dir="auto" aria-label="Phone Number:  " title="">
+				<div class="error-message" id="666224923_errorMessage"></div>
+
+				</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_1547617845"><div class="ss-q-title">Subject of query:
+				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+				<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+				<input type="text" name="entry.1547617845" value="" class="ss-q-short" id="entry_1547617845" dir="auto" aria-label="Subject of query:  " aria-required="true" required="" title="">
+				<div class="error-message" id="380146084_errorMessage"></div>
+
+				<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_1053728972"><div class="ss-q-title">Promo Code (Optional):
+				</div>
+				<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+				<input type="text" name="entry.1053728972" value="" class="ss-q-short" id="entry_1053728972" dir="auto" aria-label="Promo Code  " title="">
+
+				</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_1334383938"><div class="ss-q-title">Detailed Query:
+				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+				<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+				<textarea name="entry.1334383938" rows="8" cols="0" class="ss-q-long" id="entry_1334383938" dir="auto" aria-label="Detailed Query:  " aria-required="true" required=""></textarea>
+				<div class="error-message" id="509588336_errorMessage"></div>
+
+				</div></div></div>
+				<input type="hidden" name="draftResponse" value="[null,null,&quot;-4234249290924452818&quot;]">
+				<input type="hidden" name="pageHistory" value="0">
+
+				<input type="hidden" name="fbzx" value="-4234249290924452818">
+				<div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr"><label for="emailReceipt" style="display:inline;"></label></div>
+				<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+				<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+				</tr></tbody></table></div></ol></form>
+				<br>
+				</div>
+
+				<section>
+					<div class="map-container">
+						<h4><b style="color: white;">To reach us:</b></h4>
+						<div id="map">
+							<script type="text/javascript">
+							initMap();
+							</script>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="blinker">
+						<img src="images/cloud-animate.png" alt="cloud-animation image" height="50" width="50" />
+						<a href="contact.html" class="alert" target="_blank">Click here to get a call back!</a>
+					</div>
+				</section>
+
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2><b>Privacy Terms</b></h2>
+									</header>
+									<ul class="dates">
+										<li>
+											<span class="date"><strong># 1</strong></span>
+											<h3><b><a href="terms-of-use.html" target="_blank">Terms of Use</a></b></h3>
+											<p><b><i>Links to other websites, Termination, Governing Laws.</i></b></p>
+											<p><b><i>* logos of OEMs are trademarks of respective companies.</i></b></p>
+										</li>
+										<li>
+											<span class="date"><strong># 2</strong></span>
+											<h3><b><a href="privacy-policy.html" target="_blank">Privacy Policy</a></b></h3>
+											<p><b><i>Information Collection and Use, Log Data, Cookies, Services Providers, Security, Children's Privacy.</i></b></p>
+										</li>
+										<li>
+											<span class="date"><strong># 3</strong></span>
+											<h3><b><a href="code-of-conduct.html" target="_blank">Code of Business Conduct</a></b></h3>
+											<p><b><i>Transparency, Respect for the Individual, Set Tone at the Top, Uphold the Law, Competition, Proprietary Information,
+												Selective Disclosure, Conflicts of Interest, Accepting Business Courtesies, Corporate Recordkeeping, Accountability,
+												Use of Company Resources, Media Inquiries.</i></b></p>
+										</li>
+									</ul>
+								</section>
+							</div>
+
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2><b>Yashasvi in the News?</b></h2>
+									</header>
+									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+									<p><b>
+										Yashasvi Information Solutions Pvt. Ltd. was featured in <i>Silicon India</i> magazine's 10 most promising
+										Cisco service providers. To read more, follow the link below:
+									</b></p>
+									<footer>
+										<ul class="actions">
+											<li><a href="https://technology.siliconindiamagazine.com/ranking/10-most-promising-cisco-sservice-providers–-2017-rid-187.html" class="button"><b>Cisco Top 10 - Yashasvi</b></a></li>
+										</ul>
+									</footer>
+								</section>
+							</div>
+
+							<div class="col-4 col-12-medium">
+								<section id="social">
+									<header>
+										<h2><b>Contact Us</b></h2>
+									</header>
+									<ul class="social">
+										<li><a class="icon fa-facebook" href="https://www.facebook.com/YISPL/"><span class="label">Facebook</span></a></li>
+										<li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/yashasvi-information-solutions-pvt-ltd/?originalSubdomain=in"><span class="label">LinkedIn</span></a></li>
+										<li><a class="icon fa-twitter" href="https://twitter.com/yashasvi_info"><span class="label">LinkedIn</span></a></li>
+									</ul>
+									<ul class="contact">
+										<li>
+											<h3><b>Address</b></h3>
+											<p><b>
+												#418, JP Nagar 2<sup>nd</sup> Phase<br />
+												Bangalore - 560078<br />
+												Karnataka, India
+											</b></p>
+										</li>
+										<li>
+											<h3><b>Mail</b></h3>
+											<p><b><a href="#">info@yashasvi.co.in</a></b></p>
+											<p><b><a href="#">sanjeev@yashasvi.co.in</a></b></p>
+											<p><b><a href="#">niladri@yashasvi.co.in</a></b></p>
+										</li>
+										<li>
+											<h3><b>Mobile</b></h3>
+											<p><b>+91 9845009026 / +91 9108995664</b></p>
+										</li>
+										<li>
+											<h3><b>Phone</b></h3>
+											<p><b>+91 080 2649 2692</b></p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-12">
+
+								<div id="copyright">
+									<ul class="links">
+										<li>&copy; All rights reserved.</li><li><a href="#">Yashasvi Information Solutions</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<!-- <script src="assets/js/breakpoints.min.js"></script> -->
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
