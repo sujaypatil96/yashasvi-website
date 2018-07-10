@@ -1544,18 +1544,19 @@ input, select, textarea {
 		header.major {
 			position: relative;
 			text-align: center;
-			border-top: solid 1px #ccc;
+			border-top: solid 1px #020b10;
 			top: 1em;
 			margin: 0 0 3em 0;
 		}
 
 			header.major h2 {
-				background: #fff;
+				/* background: #fff; */
 				position: relative;
-				top: -0.65em;
+				top: -0.55em;
 				display: inline;
 				margin: 0;
 				padding: 0 1em 0 1em;
+				color: white;
 			}
 
 	footer {
@@ -1572,7 +1573,7 @@ input, select, textarea {
 	}
 
 	#box {
-		height: 900px;
+		height: 1000px;
 	}
 
 		.box .image.featured {
@@ -2253,7 +2254,9 @@ input, select, textarea {
 
 	#main {
 		position: relative;
-		background: #f7f7f7 url("images/bg02.png");
+		background: #f7f7f7 url("images/server-room.jpg");
+		background-size: cover;
+		background-position: center;
 		padding: 4em 0 4em 0;
 	}
 
@@ -2270,7 +2273,9 @@ input, select, textarea {
 		}
 
 		#main .major h2 {
-			background: #f7f7f7 url("images/bg02.png");
+			background: #020b10;
+			border-radius: 3px;
+			padding-top: 5px;
 		}
 
 /* Footer */
@@ -2891,6 +2896,18 @@ input, select, textarea {
 	    margin-left: auto;
 	    margin-right: auto;
 		margin-bottom: 20px;
+		transition: transform 0.2s;
+	}
+
+	.portfolio-images:hover {
+		transform: scale(1.3);
+	}
+
+	.index-images {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
 	}
 
 	.center {
@@ -2955,7 +2972,7 @@ input, select, textarea {
 
 	.alert
 	{
-		animation: blink 2s infinite;
+		animation: blink 1s infinite;
 		text-decoration: none;
 		color: black;
 	}
@@ -2970,12 +2987,12 @@ input, select, textarea {
 	.blinker {
 		height: 100px;
 		width: 100%;
-		background-color: #E8E8E8;
+		background-color: #dad6d7;
 		text-align: center;
 		padding-top: 1%;
 	}
 
 	.highlight {
-		background-color: yellow;
+		/* background-color: yellow; */
 		color: red;
 	}

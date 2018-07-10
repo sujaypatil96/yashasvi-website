@@ -24,11 +24,17 @@
 
 			gtag('config', 'UA-121649854-1');
 		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	</head>
 
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 				<section id="header" class="main-header">
+					<!-- <div style="background-color: #f2f3f4;" class="center">
+						<h4><b>Search:</b></h4>
+						<input type="text" />
+					</div> -->
 					<div class="index-des">
 						<img id="logo" src="images/main-logo.jpg" alt="yashasvi logo" width="360" height="230" />
 						<!-- <img src="images/brush-stroke3.png" alt="brush stroke" width="100%" height="300" /> -->
@@ -96,7 +102,7 @@
 											<h2><b>Services</b></h2>
 											<br>
 										</header>
-										<ol>
+										<ul>
 											<li><b>Data Center Consulting</b></li>
 											<li><b>Cloud Consulting</b></li>
 											<li><b>IT Transformation</b></li>
@@ -105,7 +111,7 @@
 											<li><b>Network and Collaboration</b></li>
 											<li><b>Compute, Storage and Backup</b></li>
 											<li><b>End User Computing</b></li>
-									</ol>
+										</ul>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium">
@@ -115,12 +121,12 @@
 											<h2><b>Solutions</b></h2>
 											<br>
 										</header>
-										<ol>
+										<ul>
 											<li><b>Cyber Security</b></li>
 											<li><b>Data Center Solutions</b></li>
 											<li><b>Cloud Solutions</b></li>
 											<li><b>Virtualization Assessment</b></li>
-									</ol>
+										</ul>
 									</section>
 								</div>
 							</div>
@@ -132,14 +138,14 @@
 						<div class="row">
 							<div class="col-12">
 									<section>
-										<header class="major">
-											<h2><b>Our Portfolio</b></h2>
-										</header>
+										<!-- <header class="major">
+											<h2><b style="color: white;">Our Portfolio</b></h2>
+										</header> -->
 
 										<div class="row">
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box" id="box">
-													<img class="portfolio-images" width="200" height="200" src="images/network.svg" alt="Data Center Consulting" /><br>
+													<img class="index-images" width="300" height="300" src="images/index/index-1.jpg" alt="Data Center Consulting" /><br>
 													<header>
 														<div class="center">
 															<h3><b>Data Center Consulting</b></h3>
@@ -160,7 +166,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box" id="box">
-													<img class="portfolio-images" width="200" height="200" src="images/data-index.svg" alt="Cloud Consulting" /><br>
+													<img class="index-images" width="300" height="300" src="images/index/index-2.jpg" alt="Cloud Consulting" /><br>
 													<header>
 														<div class="center">
 															<h3><b>Cloud Consulting</b></h3>
@@ -182,7 +188,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box" id="box">
-													<img class="portfolio-images" width="200" height="200" src="images/cloud.svg" alt="IT Transformation" /><br>
+													<img class="index-images" width="300" height="300" src="images/index/index-3.jpg" alt="IT Transformation" /><br>
 													<header>
 														<div class="center">
 														<h3><b>IT Transformation</b></h3>
@@ -204,7 +210,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box" id="box">
-													<img class="portfolio-images" width="200" height="200" src="images/network-index.svg" alt="Network and Collaboration" /><br>
+													<img class="index-images" width="300" height="300" src="images/index/index-4.jpg" alt="Network and Collaboration" /><br>
 													<header>
 														<div class="center">
 															<h3><b>Network and Collaboration</b></h3>
@@ -225,7 +231,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box" id="box">
-													<img class="portfolio-images" width="200" height="200" src="images/backup.svg" alt="Compute, Storage & Backup" /><br>
+													<img class="index-images" width="300" height="300" src="images/index/index-5.jpg" alt="Compute, Storage & Backup" /><br>
 													<header>
 														<h3><b>Compute, Storage & Backup</b></h3>
 														<br>
@@ -246,7 +252,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box" id="box">
-													<img class="portfolio-images" width="200" height="200" src="images/security.svg" alt="Cyber Security" /><br>
+													<img class="index-images" width="300" height="300" src="images/index/index-6.jpg" alt="Cyber Security" /><br>
 													<header>
 														<div class="center">
 															<h3><b>Cyber Security</b></h3>
@@ -273,11 +279,8 @@
 							</div>
 
 							<div class="col-12">
-								<div class="center">
-									<p><b>Our OEMs*:</b></p>
-								</div>
 								<div class="carousel"
-								data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 1000, "wrapAround": true }'>
+								data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 3000, "wrapAround": true }'>
 								<div class="carousel-cell">
 									<img src="assets/css/images/partners/dell-emc.jpg" alt="Dell-EMC" />
 								</div>
@@ -285,7 +288,25 @@
 									<img src="assets/css/images/partners/ibm.png" alt="IBM" />
 								</div>
 								<div class="carousel-cell">
+									<img src="assets/css/images/partners/cisco.png" alt="Cisco" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/check-point.jpg" alt="Check Point" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/vmware.png" alt="VMware" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/oracle.png" alt="Oracle" />
+								</div>
+								<div class="carousel-cell">
 									<img src="assets/css/images/partners/hpe.jpg" alt="HPE" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/riverbed.png" alt="Riverbed" />
+								</div>
+								<div class="carousel-cell">
+									<img src="assets/css/images/partners/hp.png" alt="HP" />
 								</div>
 								<div class="carousel-cell">
 									<img src="assets/css/images/partners/veritas.jpg" alt="Veritas" />
@@ -303,15 +324,6 @@
 									<img src="assets/css/images/partners/acronis.jpg" alt="Acronis" />
 								</div>
 								<div class="carousel-cell">
-									<img src="assets/css/images/partners/cisco.png" alt="Cisco" />
-								</div>
-								<div class="carousel-cell">
-									<img src="assets/css/images/partners/check-point.jpg" alt="Check Point" />
-								</div>
-								<div class="carousel-cell">
-									<img src="assets/css/images/partners/riverbed.png" alt="Riverbed" />
-								</div>
-								<div class="carousel-cell">
 									<img src="assets/css/images/partners/seclore.png" alt="Seclore" />
 								</div>
 								<div class="carousel-cell">
@@ -324,13 +336,10 @@
 									<img src="assets/css/images/partners/redhat.png" alt="Redhat" />
 								</div>
 								<div class="carousel-cell">
-									<img src="assets/css/images/partners/sophos.png" alt="Sophos" />
+									<img src="assets/css/images/partners/sophos.jpg" alt="Sophos" />
 								</div>
 								<div class="carousel-cell">
 									<img src="assets/css/images/partners/suse2.png" alt="Suse" />
-								</div>
-								<div class="carousel-cell">
-									<img src="assets/css/images/partners/vmware.png" alt="VMware" />
 								</div>
 								<div class="carousel-cell">
 									<img src="assets/css/images/partners/polycom.png" alt="Polycom" />
@@ -342,13 +351,7 @@
 									<img src="assets/css/images/partners/lenovo.jpg" alt="Lenovo" />
 								</div>
 								<div class="carousel-cell">
-									<img src="assets/css/images/partners/hp.png" alt="HP" />
-								</div>
-								<div class="carousel-cell">
 									<img src="assets/css/images/partners/microsoft.jpg" alt="Microsoft" />
-								</div>
-								<div class="carousel-cell">
-									<img src="assets/css/images/partners/oracle.png" alt="Oracle" />
 								</div>
 								<div class="carousel-cell">
 									<img src="assets/css/images/partners/aws.png" alt="AWS" />
