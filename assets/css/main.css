@@ -1,6 +1,7 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2063,7 +2064,7 @@ input, select, textarea {
 			font-weight: 900;
 			font-size: 2.5em;
 			letter-spacing: -0.035em;
-			line-height: 1;
+			line-height: 2;
 		}
 
 /* Nav */
@@ -2254,7 +2255,7 @@ input, select, textarea {
 
 	#main {
 		position: relative;
-		background: #f7f7f7 url("images/server-room.jpg");
+		background: #f7f7f7 url("images/autumn.jpg");
 		background-size: cover;
 		background-position: center;
 		padding: 4em 0 4em 0;
@@ -2273,9 +2274,9 @@ input, select, textarea {
 		}
 
 		#main .major h2 {
-			background: #020b10;
-			border-radius: 3px;
-			padding-top: 5px;
+			background: #f2ec73;
+			padding: 15px 15px 10px 15px;
+			border-radius: 5px;
 		}
 
 /* Footer */
@@ -2995,4 +2996,8 @@ input, select, textarea {
 	.highlight {
 		/* background-color: yellow; */
 		color: red;
+	}
+
+	.blue {
+		color: #7b81b2;
 	}

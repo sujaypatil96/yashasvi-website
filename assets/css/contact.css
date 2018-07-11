@@ -16,6 +16,12 @@
         border-radius: 8px;
     }
 
+    .form {
+        background-image: url("images/autumn.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
     input[type="text"],
     input[type="password"],
     input[type="date"],
