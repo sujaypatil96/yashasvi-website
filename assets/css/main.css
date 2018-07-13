@@ -2255,7 +2255,7 @@ input, select, textarea {
 
 	#main {
 		position: relative;
-		background: #f7f7f7 url("images/autumn.jpg");
+		background: #f7f7f7 url("images/security.jpg");
 		background-size: cover;
 		background-position: center;
 		padding: 4em 0 4em 0;
@@ -2274,7 +2274,7 @@ input, select, textarea {
 		}
 
 		#main .major h2 {
-			background: #f2ec73;
+			background: black;
 			padding: 15px 15px 10px 15px;
 			border-radius: 5px;
 		}
@@ -2999,5 +2999,5 @@ input, select, textarea {
 	}
 
 	.blue {
-		color: #446599;
+		color: #23547f;
 	}
